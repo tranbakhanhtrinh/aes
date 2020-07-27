@@ -162,6 +162,10 @@ header {
             @media screen and (min-width: 1200px) {
                 width: 300px;
             }
+
+            @media screen and (max-width: 575.98px) {
+                width: 65%;
+            }
         }
 
         .navbar-collapse {
@@ -530,6 +534,11 @@ footer {
             color: #fff;
         }
     }
+
+    .logo-ft {
+        max-width: 30%;
+        margin-bottom: 1rem;
+    }
 }
 
 #thanks {
@@ -556,24 +565,22 @@ footer {
         &:first-of-type {
             font-size: 2rem;
             font-family: $font_Bold;
+            text-transform: uppercase;
         }
-    }
 
-    figure {
-        img {
-            width: 50px;
+        &:last-of-type {
+            margin-bottom: 3rem;
         }
     }
 
     a {
         text-transform: capitalize;
-        margin-top: 2rem;
-        padding: .5rem 2rem;
+        padding: 1rem 2rem;
         text-align: center;
         font-family: $font_Bold;
-        color: #fff;
-        background: #f5821f;
-        @include border-radius(5px);
+        color: #5C1548;
+        background: #D186BC;
+        @include border-radius(0px);
 
         &:hover {
             color: #fff;
@@ -628,23 +635,29 @@ footer {
     color: #A1A1A1;
 }
 
-@media (min-width: 2561px) {
+.modal-content {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
 
-    body,
-    html {
-        max-width: 1140px;
-        margin: auto;
-    }
-
-    .fixed-top {
-        max-width: 1140px;
-        margin: auto;
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        opacity: 1;
+        color: #fff;
     }
 }
 
-@media (min-width: 1680px) and (max-width: 1899px) {}
+@media screen and (min-width: 2500px) {
 
-@media (min-width: 1440px) and (max-width: 1500px) {}
+    body,
+    html,
+    header {
+        max-width: 1920px;
+        margin: auto;
+    }
+}
 
 @media (max-width: 575.98px) {
     .navbar-light {
@@ -659,61 +672,75 @@ footer {
     }
 
     #trangchu {
-        #header-banner {
-            .banner1 {
-                .banner1-left {
-                    p {
-                        font-size: 2rem;
-                    }
+        background-position: left;
 
-                    .banner1-text {
-                        p {
-                            font-size: 1.5rem;
-                        }
-                    }
-
-                    button {
-                        margin-bottom: 1rem;
-                    }
-                }
+        p {
+            .break {
+                display: inline;
             }
+        }
+    }
 
-            .banner2 {
-                ul {
-                    width: auto;
-                    padding-left: .5rem;
-                    padding-top: 1rem;
+    #header2 {
+        padding-bottom: 0;
+    }
 
-                    li {
-                        margin-bottom: 2rem;
-                        padding-left: 1.7rem;
-                        font-size: 1.2rem;
-                        background-position: 0px 8px;
-                    }
+    #why {
+        .outside-title {
+            margin-top: 2rem;
+
+            .title1 {
+                hr {
+                    width: 20%;
                 }
             }
         }
-    }
 
-    #dangky {
-        form {
-            margin-top: 1rem;
+        .content {
+            padding: 2rem 1rem;
         }
     }
 
-    #tieuhoc {
-        .tieuhoc-left {
-            &--content {
-                padding: 0;
+    #ketqua {
+        .outside-title {
+            .title {
+                .break {
+                    display: inline;
+                }
             }
         }
     }
 
-    #camnhan {
-        #camnhan-slider {
-            padding: 1rem;
+    #quanly {
+        .bg-tim {
+            margin-top: 2rem;
+            padding: 2rem 1rem;
         }
     }
+
+    #giaovien {
+        .outside-title {
+            hr {
+                width: 7%;
+            }
+        }
+
+        .content {
+            padding: 2rem 1rem;
+        }
+    }
+
+    #dieukien {
+        padding: 2rem 0;
+    }
+
+    #about-aes,
+    #about-haileybury {
+        .content {
+            padding: 2rem 1rem;
+        }
+    }
+
 
     #thanks {
         p {
@@ -727,7 +754,3 @@ footer {
         }
     }
 }
-
-@media (max-width: 380px) {}
-
-@media (min-width: 576px) {}

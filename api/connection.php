@@ -1,16 +1,16 @@
 <?php
 /*
- $servername = "localhost";
-$username = "homestead";
-$password = "secret";
-$database = "wincos";
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$database = "aes";
  */
 function DBConfig()
 {
     $servername = "112.213.89.140";
-    $username = "vinst397_vass";
-    $password = "F,Tzs;xnhHW^";
-    $database = "vinst397_vass";
+    $username = "vinst397_aes";
+    $password = "8z9k[Y*4ZwuU";
+    $database = "vinst397_aes";
     return array(
         'servername' => $servername,
         'username' => $username,
