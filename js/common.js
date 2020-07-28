@@ -2,7 +2,7 @@ $(function () {
     $('body').on('click', '.page-scroll a', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 70
+            scrollTop: $($anchor.attr('href')).offset().top - 80
         }, 600);
         event.preventDefault();
     });
@@ -64,11 +64,11 @@ function kiemtra() {
         $('#phone').focus();
         return false;
     }
-    else if (!isValidEmail($('#email').val())) {
-        alert("Email không hợp lệ !");
-        $('#email').focus();
-        return false;
-    }
+    // else if (!isValidEmail($('#email').val())) {
+    //     alert("Email không hợp lệ !");
+    //     $('#email').focus();
+    //     return false;
+    // }
     else {
         const phone = $('#phone').val();
         const fullname = $('#fullname').val();

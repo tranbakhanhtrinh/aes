@@ -38,6 +38,16 @@ html {
     background-color: #fff;
 }
 
+.container-fluid {
+    @media screen and (min-width:1200px) and (max-width:1399px) {
+        max-width: 1140px;
+    }
+
+    @media screen and (min-width:1400px) {
+        max-width: 1410px;
+    }
+}
+
 section {
     padding: 2rem 0;
 }
@@ -178,6 +188,17 @@ header {
                         p {
                             margin-bottom: 0;
                             color: #BAB493;
+
+                            &:hover {
+                                font-family: $font_Bold;
+                            }
+                        }
+
+                        &.active {
+                            p {
+                                font-family: $font_Bold;
+                            }
+
                         }
                     }
                 }
@@ -231,6 +252,7 @@ main {
         li {
             color: #5C1548;
             font-size: 1.5rem;
+            font-family: $font_Medium;
         }
     }
 
@@ -324,6 +346,10 @@ main {
                     font-family: $font_Medium;
                 }
             }
+        }
+
+        img {
+            cursor: pointer;
         }
 
         @media screen and (min-width:1500px) {
@@ -488,7 +514,7 @@ main {
 }
 
 #dieukien {
-    padding: 0 2rem 2rem;
+    padding: 0rem;
 
     .dieu-kien-tot-nghiep {
 
@@ -531,6 +557,8 @@ main {
 }
 
 #about-haileybury {
+
+
     .outside-title {
         display: flex;
 
@@ -547,6 +575,7 @@ main {
 
         p {
             line-height: 1.6875rem;
+            text-align: justify;
 
             &.title {
                 margin-bottom: 2rem;
@@ -556,6 +585,18 @@ main {
         @media screen and (min-width:1200px) {
             padding: 2rem 8rem;
         }
+
+        @media screen and (min-width:1200px) and (max-width:1399px) {
+            padding: 2rem;
+        }
+
+        @media screen and (min-width:1400px) and (max-width:1499px) {
+            padding: 2rem;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 0 0 2rem;
     }
 }
 
@@ -736,6 +777,7 @@ footer {
     #why {
         .outside-title {
             margin-top: 2rem;
+            padding-left: 1rem;
 
             .title1 {
                 hr {
@@ -751,6 +793,8 @@ footer {
 
     #ketqua {
         .outside-title {
+            margin-bottom: 2rem;
+
             .title {
                 .break {
                     display: inline;
