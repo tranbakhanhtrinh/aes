@@ -64,6 +64,11 @@ function kiemtra() {
         $('#phone').focus();
         return false;
     }
+    else if (!isValidEmail($('#email').val())) {
+        alert("Email không hợp lệ !");
+        $('#email').focus();
+        return false;
+    }
     else {
         const phone = $('#phone').val();
         const fullname = $('#fullname').val();
