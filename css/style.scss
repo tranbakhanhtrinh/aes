@@ -205,8 +205,6 @@ main {
     @include background(url('../assets/images/bg-header.png'), no-repeat, cover, center);
 
     p {
-
-
         &:first-of-type {
             font-size: 2.25rem;
             color: #5C1548;
@@ -260,10 +258,38 @@ main {
 
     @media screen and (min-width:1200px) and (max-width:1399px) {
         min-height: 745px;
+        padding: 1rem 0 3rem;
+
+        p {
+            &:first-of-type {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+        }
+
+        ul {
+            li {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     @media screen and (min-width:1400px) and (max-width:1499px) {
         min-height: 780px;
+        padding: 1rem 0 3rem;
+
+        p {
+            &:first-of-type {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+        }
+
+        ul {
+            li {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     @media screen and (min-width:1500px) and (max-width:1699px) {
@@ -300,8 +326,12 @@ main {
             }
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1500px) {
             padding: 0 7rem;
+        }
+
+        @media screen and (min-width:1200px) and (max-width:1499px) {
+            padding: 0 5rem;
         }
     }
 
@@ -440,6 +470,7 @@ main {
 
     .content {
         padding: 3rem 7rem 3rem calc(22% + .5rem);
+        text-align: justify;
 
         p {
             line-height: 1.6875rem;
